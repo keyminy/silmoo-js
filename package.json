@@ -1,0 +1,21 @@
+{
+  "name": "silmoo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "develop": "node index.js",
+    "test": "node --version"
+  },
+  "dependencies": {
+    "moment": "^2.29.4",
+    "ramda": "^0.28.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.20.7",
+    "@babel/core": "^7.20.12",
+    "@babel/node": "^7.20.7",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.20.2"
+  }
+}
