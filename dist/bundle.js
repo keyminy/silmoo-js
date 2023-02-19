@@ -1,1 +1,1 @@
-(()=>{"use strict";console.log("실무코딩")})();
+(()=>{console.log(1,2),console.log(1,2),console.log(1,2);!function(o,l){console.log(o,l)}(1,2)})();

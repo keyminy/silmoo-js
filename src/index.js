@@ -1,5 +1,7 @@
-import { print } from "./util";
-console.clear();
-print('실무코딩');
-print("수정 변경"); 
-print("Web 화면을 갱신합니다")
+//const comA = require('./lib_com')
+const {a,fnt} = require('./lib_com')
+
+//const {a,fnt} = com;
+
+console.log(a);
+fnt();
