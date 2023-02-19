@@ -1,0 +1,36 @@
+{
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true,
+        "source.fixAll.eslint": true
+    },
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
+    "editor.fontFamily": "D2Coding, Consolas, 'Courier New', monospace",
+    "editor.fontLigatures": false,
+    "editor.fontSize": 18,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.guides.bracketPairs": true,
+    "editor.minimap.enabled": false,
+    "editor.mouseWheelZoom": true,
+    "eslint.codeActionsOnSave.rules": null,
+    "files.autoSave": "afterDelay",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "prettier.jsxSingleQuote": true,
+    "prettier.printWidth": 160,
+    "prettier.semi": false,
+    "prettier.singleQuote": true,
+    "prettier.tabWidth": 4,
+    "search.exclude": {
+        "**/dist": true,
+        "**/public": true
+    },
+    "workbench.iconTheme": "vscode-icons",
+    "prettier.arrowParens": "avoid",
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "git.autofetch": true,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "window.zoomLevel": 0
+}
