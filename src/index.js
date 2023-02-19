@@ -1,4 +1,6 @@
-const com = require('./lib_es6');
-console.clear();
-console.log(com,com.value);
-com.print('메시지');
+import ClassA from "./lib_es6";
+import com from './lib_com';
+
+//console.clear();
+const a = new ClassA();
+a.print();
