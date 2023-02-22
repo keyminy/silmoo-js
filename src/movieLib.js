@@ -148,20 +148,25 @@ const pagedMoviesByTitleOld = (page,pageCount,searchText) => {
 
 console.clear();
 
-export const pagedMoviesByTitle = (page,pageCount,searchText) => 
-  movieArray.filter(
-    ({nameKor,nameEng}) => 
-      nameKor.indexOf(searchText) !== -1 
-       || nameEng.indexOf(searchText) !== -1
-  )
-  .slice(page * pageCount,(page+1)*pageCount);
+export const pagedMoviesByTitle = (page,pageCount,searchText) => {
+  const all = movieArray.filter(
+            ({nameKor,nameEng}) => 
+              nameKor.indexOf(searchText) !== -1 
+              || nameEng.indexOf(searchText) !== -1
+            );
+  const totalCount = all.length;
+  const data = all.slice(page * pageCount,(page+1)*pageCount);
+  return Promise.resolve({page,pageCount,totalCount,data});
+}
+  
 
 //console.log(pagedMoviesByTitle(0,10,'아이'));
 
 console.clear();
 
-export const pagedMoviesByYear = (page,pageCount,year) => 
-  movieArray.filter(
-    ({productYear}) => productYear === year
-  )
-  .slice(page * pageCount,(page+1)*pageCount);
+export const pagedMoviesByYear = (page,pageCount,year) => {
+  const all = movieArray.filter(({productYear}) => productYear === year);
+  const totalCount = all.length;
+  const data = all.slice(page * pageCount,(page+1)*pageCount);
+  return Promise.resolve({page,pageCount,totalCount,data});
+}
