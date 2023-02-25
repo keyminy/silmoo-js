@@ -43,16 +43,13 @@ const artist2 = {
 }
 
 class Person {
-  firstName = null;
-  lastName = null;
-  gender = null;
-  get name() {
-    return this.firstName + this.lastName;
-  }
   constructor(name,gender){
     this.firstName = name.substr(0,1);
     this.lastName = name.substr(1);
     this.gender = gender;
+  }
+  get name() {
+    return this.firstName + this.lastName;
   }
 }
 
